@@ -1,0 +1,150 @@
+h1 {
+  font-family: "Bahnschrift", sans-serif;
+  text-align: center;
+}
+
+div {
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 600px;
+  background: #393939;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-family: "Bahnschrift", sans-serif;
+    text-align: center;
+  }
+
+  input, select {
+    margin: 10px 0;
+    box-sizing: border-box;
+    padding: 0 10px;
+    width: 100%;
+    height: 10vw;
+    max-height: 50px;
+  }
+
+  i {
+    z-index: 10;
+    margin-left: -30px;
+    cursor: pointer;
+  }
+
+  button {
+    margin: 20px 0;
+    width: 100%;
+    height: 50px;
+  }
+
+  #registrationButtonAdvertisement, #loginButtonAdvertisement {
+    text-align: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+
+    margin: 0;
+    height: auto;
+    color: #B9E0FF;
+  }
+}
+
+.button-login {
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.button-login:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-login:focus {
+  user-select: auto;
+}
+
+.button-login:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.button-login:disabled {
+  cursor: auto;
+}
+
+.input {
+  color: white;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  box-sizing: border-box;
+  font-family: din-round, sans-serif;
+  font-size: 15px;
+  margin: 0;
+  transition: filter .2s;
+  -webkit-user-select: none;
+  width: 100%;
+}
+
+.input:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+
+
+.input:disabled {
+  cursor: auto;
+}

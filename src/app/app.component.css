@@ -2,7 +2,3 @@ html {
   background-color: #292929;
   color: #CCC;
 }
-
-::placeholder {
-  color: #CCC;
-}

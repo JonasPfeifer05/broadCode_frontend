@@ -1,0 +1,36 @@
+<h1>Login</h1>
+
+<div *ngIf="!register">
+  <h2>Welcome Back!</h2>
+
+  <input autocomplete="off" [(ngModel)]="loginUserName" class="input" type="text" name="username" id="username" placeholder="Username">
+
+  <span>
+    <input autocomplete="off" [(ngModel)]="loginPassword" class="input" [type]="passwordType" name="password" id="password" placeholder="Password">
+    <i (click)="changeVisibility($event)" class="bi bi-eye-slash" id="togglePassword"></i>
+  </span>
+
+  <button class="button-login" role="button" (click)="login()">Login</button>
+
+  <button (click)="viewRegister()" id="registrationButtonAdvertisement">Not yet registered?</button>
+</div>
+
+<div *ngIf="register">
+  <h2>Getting Started!</h2>
+
+  <input autocomplete="off" [(ngModel)]="registerUserName" class="input" type="text" name="username" id="usernameRegister" placeholder="Username">
+
+  <span>
+    <input autocomplete="off" [(ngModel)]="registerPassword" class="input" [type]="passwordType" name="password" id="passwordRegister" placeholder="Password">
+    <i (click)="changeVisibility($event)" class="bi bi-eye-slash" id="togglePasswordRegister"></i>
+  </span>
+
+  <select autocomplete="off" [(ngModel)]="registerUserType" class="input">
+    <option value="Student">Student</option>
+    <option value="teacher">Teacher</option>
+  </select>
+
+  <button class="button-login" role="button" (click)="registerUser()">Register</button>
+  <button (click)="viewRegister()" id="loginButtonAdvertisement">Already registered?</button>
+</div>
+
