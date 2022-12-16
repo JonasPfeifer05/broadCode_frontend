@@ -9,13 +9,15 @@ import { ErrorScreenComponent } from './error-screen/error-screen.component';
 import {FormsModule} from "@angular/forms";
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { TokenInterceptor } from './services/token.interceptor';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginScreenComponent,
     MainScreenComponent,
-    ErrorScreenComponent
+    ErrorScreenComponent,
+    TestComponent
   ],
     imports: [
         BrowserModule,
