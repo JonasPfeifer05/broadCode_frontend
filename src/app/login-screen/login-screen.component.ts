@@ -36,7 +36,7 @@ export class LoginScreenComponent {
 
         let user = await firstValueFrom(this.http.post("http://localhost:8000/get_user", {
             name: this.loginUserName,
-            password: this.loginPassword
+            password: this.loginPassword,
         }, {
             headers: {
                 'Content-Type': 'application/json'
@@ -70,7 +70,8 @@ export class LoginScreenComponent {
 
         let user = await firstValueFrom(this.http.post("http://localhost:8000/add_user", {
             name: this.registerUserName,
-            password: this.registerPassword
+            password: this.registerPassword,
+            typee: this.registerUserType,
         }, {headers: {
                 'Content-Type': 'application/json'
             }})).then(value => value).catch(reason => reason)
